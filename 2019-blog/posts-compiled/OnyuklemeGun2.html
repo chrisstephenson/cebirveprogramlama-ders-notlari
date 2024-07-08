@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130435659-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-130435659-1');
+</script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+-->    
+    <link rel="stylesheet" href="/css/my.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">  
+    <title>Mehmet Gencer: Önyükleme 1-2. Gün: Matematik Köyü Bilgisayar Programlama Dersinden notlar</title>
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Önyükleme 1-2. Gün: Matematik Köyü Bilgisayar Programlama Dersinden notlar | Mehmet Gençer’s home page</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Önyükleme 1-2. Gün: Matematik Köyü Bilgisayar Programlama Dersinden notlar" />
+<meta name="author" content="Mehmet Gençer" />
+<meta property="og:locale" content="tr" />
+<meta name="description" content="Eğitimin ikinci günü: kodlama, fonksiyon kavramı, değişken kavramı ve Racket dilinde tanımlanması ile küçük programlar yazmaya başlıyorlar" />
+<meta property="og:description" content="Eğitimin ikinci günü: kodlama, fonksiyon kavramı, değişken kavramı ve Racket dilinde tanımlanması ile küçük programlar yazmaya başlıyorlar" />
+<link rel="canonical" href="http://mgencer.com/onyukleme/2019/07/23/OnyuklemeGun2.html" />
+<meta property="og:url" content="http://mgencer.com/onyukleme/2019/07/23/OnyuklemeGun2.html" />
+<meta property="og:site_name" content="Mehmet Gençer’s home page" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-07-23T00:00:00+03:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://mgencer.com/onyukleme/2019/07/23/OnyuklemeGun2.html","headline":"Önyükleme 1-2. Gün: Matematik Köyü Bilgisayar Programlama Dersinden notlar","dateModified":"2019-07-23T00:00:00+03:00","datePublished":"2019-07-23T00:00:00+03:00","author":{"@type":"Person","name":"Mehmet Gençer"},"description":"Eğitimin ikinci günü: kodlama, fonksiyon kavramı, değişken kavramı ve Racket dilinde tanımlanması ile küçük programlar yazmaya başlıyorlar","mainEntityOfPage":{"@type":"WebPage","@id":"http://mgencer.com/onyukleme/2019/07/23/OnyuklemeGun2.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+    
+</head>
+  <body style="margin-top:75px;margin-bottom:65px;">
+ 
+    <header class="site-header"> 
+  <a class="navbar-brand float-left d-none d-lg-block" href="/index.html"><img src="/assets/mgfoto-kucuk.jpg" style="max-width:150px;padding:10px;"/></a>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      
+  <!--  <a class="navbar-brand mybigfont" href="/" style="min-width:0px;">
+      Anasayfa
+   </a> -->
+      
+	<a class="navbar-brand " href="/" style="min-width:0px;">
+      Mehmet Gençer
+   </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+ <div class="container">
+  <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item mybigfont">
+   	     <a class="nav-link" href="/" style="min-width:0px;">
+      Anasayfa
+       </a>
+    </li>
+    
+        
+         
+          
+         
+        
+         
+          
+         
+        
+         
+          
+         
+        
+         
+          
+         
+        
+         
+          
+         
+        
+         
+          
+         
+        
+         
+          
+         
+        
+         
+          
+         
+        
+         
+          
+         
+        
+         
+          
+         
+        
+         
+          
+         
+        
+         
+          
+	      <li class="nav-item mybigfont">
+   	     <a class="nav-link" href="/hakkimda/">Hakkımda</a>
+      	</li>
+         
+          
+         
+        
+         
+          
+	      <li class="nav-item mybigfont">
+   	     <a class="nav-link" href="/yayinlar/">Yayınlar</a>
+      	</li>
+         
+          
+         
+        
+         
+          
+	      <li class="nav-item mybigfont">
+   	     <a class="nav-link" href="/arastirma/">Araştırma</a>
+      	</li>
+         
+          
+         
+        
+         
+          
+	      <li class="nav-item mybigfont">
+   	     <a class="nav-link" href="/dersler/">Dersler</a>
+      	</li>
+         
+          
+         
+        
+         
+          
+	      <li class="nav-item mybigfont">
+   	     <a class="nav-link" href="/blog/">Blog</a>
+      	</li>
+         
+          
+         
+        
+         
+          
+	      <li class="nav-item mybigfont">
+   	     <a class="nav-link" href="/iletisim/">İletişim</a>
+      	</li>
+         
+          
+         
+         
+    </ul>
+    <a href="/index-en.html" class="" title="Visit English version of this website">  <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/4x3/gb.svg" style="max-width:25px;margin:5px;"/>  </a>  
+    <a href="/index.html" class="" title="Türkçe siteyi ziyaret ediniz">  <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/4x3/tr.svg" style="max-width:25px;margin:5px;"/>  </a>
+    
+  </div>
+ </div>
+</nav>
+
+</header>
+
+
+<div class="d-none d-lg-block" id="graph"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.1/d3.min.js"></script>
+<script src="/js/my.js">    </script>   
+
+
+    <div class="container">
+  		<!--facebook-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/tr_TR/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--end facebook-->
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Önyükleme 1-2. Gün: Matematik Köyü Bilgisayar Programlama Dersinden notlar</h1>
+    <p class="post-meta">
+    <time datetime="2019-07-23T00:00:00+03:00" itemprop="datePublished">Jul 23, 2019</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Mehmet Gençer</span></span>
+<span class="">
+       <div class="fb-like" data-href="http://mgencer.com/onyukleme/2019/07/23/OnyuklemeGun2.html" data-width="150" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    
+        <a   class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Önyükleme 1-2. Gün: Matematik Köyü Bilgisayar Programlama Dersinden notlar&url=http://mgencer.com/onyukleme/2019/07/23/OnyuklemeGun2.html"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on Twitter" >
+        </a>
+
+        <a  class="fa fa-google-plus" href="https://plus.google.com/share?url=http://mgencer.com/onyukleme/2019/07/23/OnyuklemeGun2.html"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on Google+" >
+        </a>
+
+        <a  class="fa fa-pinterest-p" href="http://pinterest.com/pin/create/button/?url=http://mgencer.com/onyukleme/2019/07/23/OnyuklemeGun2.html"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on Pinterest" >
+        </a>
+
+        <a  class="fa fa-tumblr " href="http://www.tumblr.com/share/link?url=http://mgencer.com/onyukleme/2019/07/23/OnyuklemeGun2.html"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on Tumblr" >
+        </a>
+
+        <a  class="fa fa-reddit-alien" href="http://www.reddit.com/submit?url=http://mgencer.com/onyukleme/2019/07/23/OnyuklemeGun2.html"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on Reddit" >
+           
+        </a>
+
+        <a  class="fa fa-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://mgencer.com/onyukleme/2019/07/23/OnyuklemeGun2.html&title=Önyükleme 1-2. Gün: Matematik Köyü Bilgisayar Programlama Dersinden notlar&summary=&source=Mehmet Gençer's home page"
+            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+            title="Share on LinkedIn" >
+            
+        </a>
+
+        <a class="fa fa-envelope" href="mailto:?subject=Önyükleme 1-2. Gün: Matematik Köyü Bilgisayar Programlama Dersinden notlar&amp;body=Check out this site http://mgencer.com/onyukleme/2019/07/23/OnyuklemeGun2.html"
+            title="Share via Email" >
+            
+        </a>
+
+  </span>
+       </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Eğitimin ikinci günü: kodlama, fonksiyon kavramı, değişken kavramı ve Racket dilinde tanımlanması ile küçük programlar yazmaya başlıyorlar</p>
+
+<!--more-->
+
+<h1 id="2-gün">2. gün</h1>
+
+<p>Ders akışı:</p>
+
+<p>Saat 08:00-12:00:</p>
+
+<ol>
+  <li>Önyükleme Ünite 2: Değerlendirme çemberi tekrar egzersizleri.</li>
+  <li>Ünite 2: Farklı veri tipleri ile çalışan fonksiyonlar: görseller ve metinleri kullanma</li>
+  <li>Ünite 2: Fonksiyon sözleşmeleri</li>
+  <li>Görüntü üreten fonksiyonlar.</li>
+  <li>Değişken tanımlama</li>
+  <li>Oyun tasarımı</li>
+  <li>Oyun kodunu değiştirme</li>
+</ol>
+
+<p>Saat 16:00-18:00:</p>
+
+<ol>
+  <li>Önyükleme Ünite 3: Değişken tanımlama</li>
+  <li>Ünite 3: Fonksiyon tanımlama.</li>
+</ol>
+
+<p><img src="http://mgencer.com/assets/onyuklemeAssets/gun2-genel-kucuk.jpg" alt="Gün 2" class="postimgright" /></p>
+
+<p>Gün değerlendirme çemberinin tekrarı ile başlıyor. Çünkü bu çemberler görsel olarak Racket/Scheme dillerindeki parantez, fonksiyon, ve parametrelerine birebir denk düşüyor. Matematiksel ifadelerin dilinden değerlendirme çemberine ve ondan da Racket koduna geçiş öğrencilere Racket dilinin sözdizimi kurallarını anlatmanın en iyi yolu.</p>
+
+<p>Hemen sonrasında öğrenciler için en keyifli etaplardan biri: görseller üreten fonksiyonlar. Bu noktada “circle”, “star”, “ellipse” ve diğer fonksiyonları kullanıyorlar. Bu noktada yaşadığımız bir güçlük Racket kitaplıkları ile ilgili oldu. Görüntü fonksiyonları birkaç kitaplıktan gelebilir. Racket standart teachpack/kitaplığı 2htdp/image, yani Felleisen ve ekibinin üniversite lisans dersinde kullandığı. Bootstrap ekibi ise bootstrap diye bir teachpack. Bu detayı kaçırdığımız için kısa bir bocalama yaşıyoruz. İnternet olsaydı WeScheme ile bu sorunları hiç yaşamayacaktık. Bir dahaki sefere hazırlık aşamasına bu detayı da eklemek gerekiyor.</p>
+
+<p>Bu aşamada fazla ilerlemeden “fonksiyon sözleşmesi” kavramına girmek gerekiyor. Sözleşme bir fonksiyonun hem kullanım kılavuzu hem de tasarım şeması. Öğrenciler hemen “bu ne işe yarıyor” diye soruyorlar. Çünkü sözleşme kodun yeni “numara”lar yapmasını sağlayan birşey değil. Burada teknoloji odaklı ve sabırsız bir nesil var ve onları ikna etmek gerekiyor. Ne var ki sözleşmelerin değeri ancak eğitmenin hafta boyunca inadı ile yavaş yavaş idrak edilebilecek bir konu. Bu noktada yapabileceğiniz en iyi şeylerden biri Racket dökümantasyonunu onlara göstermek ve görüntü üreten fonksiyonları keşfetmelerini sağlamak. Bunu yaparken fonksiyon sözleşmelerini inceleyip kullanıyorlar ve bunun ne işe yaradığını biraz olsun hissetmiş oluyorlar.</p>
+
+<p>Bizim dersimizde orijinal Bootstrap dersine göre daha fazla süre var. Bu yüzden bu aşamada biraz görüntü fonksiyonlarına dalıyoruz, çünkü onları cezbediyor ve derse angajmanlarını arttırıyor. Görüntü birleştirmeye yarayan “overlay”, “beside”, “put-image” gibi fonksiyonları anlatıp küçük challenge’lar veriyoruz: mesela bir ev yapma (kare bina üstüne üçgen çatı) gibi. Bu egzersizlerin yazım hatalarını deneyimlemek, hata mesajlarını okumak, klavyede normalde kullanmadıkları sembollere alışmak gibi yararları oluyor.</p>
+
+<p>Bunun ardından değişken tanımlama geliyor. Burada ihtiyacı tarif etmek için önce onlardan basit bir ev çizmelerini istedim:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(above
+  (triangle 50 "solid" "red")
+  (square 50 "outline" "black"))
+</code></pre></div></div>
+
+<p>Sonra da “bir mahalle çizmek istesek nasıl yaparız?” sorusunu sordum. Bunun üzerinde define fonksiyonu tam da yerini buluyor. Define ile ilgili olarak (1) hiç bir değer döndürmediği, ve (2) ikinci parametrese herhangi bir değer alabileceği için sözleşmesinin bir tuhaf olduğunu not etmek gerekiyor. Daha sonra yukarıdaki ifadeyi bir ev olarak tanımladılar::</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(define ev
+        (above
+          (triangle 50 "solid" "red")
+          (square 50 "outline" "black")))
+</code></pre></div></div>
+
+<p>Bunun ardından uyun tasarımına geçtik. Oyunlarında kullanacakları karakterleri, tema ve arkaplanı düşünüp not aldılar. Bunları uzun uzun paylaşıyoruz, hem grubun etkileşimi için iyi oluyor hem de çok eğlenceli, sivri fikirler var ve herkesi eğlendiriyor. Bunlardan birkaçını videoda paylaşıyorum.</p>
+
+<div class="embed-container">
+  <iframe src="https://www.youtube.com/embed/RYbrJ-18_28" width="700" height="480" frameborder="0" allowfullscreen="">
+  </iframe>
+</div>
+
+<p>Bunu da bitirince oyun kodunu açıyorlar. Ders notlarındaki akışa uygun olarak önce tanımları bulup interaktif ekrandan yazdırıyorlar (örn. oyun ekranı başlığı). Sonra da tespit ettikleri define’ları değiştirerek oyunu biraz kişiselleştiriyorlar.</p>
+
+<p>Tanımlarla Tuba hocamız bol bol egzersiz yaptırdı. Bu arada görüntü işlemek için rotate, scale, above, aside gibi birçok fonksiyonu da öğrenmiş oldular. Bunları yaparken zaman zaman Racket-2htdp/image kitaplığı ile bootstrap kitaplığı arasında sinir bozucu farklar buluyoruz. Bütün bunlar WeScheme kullanamamanın sonucu. Ama doğrusu öğrencilerin İnternete takılarak dikkatlerinin dağılmaması bu sıkıntılara değer.</p>
+
+<p>Günün ve 3. ünitesin son etabında fonksiyon tanımlarına geçiyoruz. Chris Bootstrap’in en keyifli taraflarından olan tümevarımla fonksiyon tanımlama konusunu anlatıyor: yani birkaç örnek yazıp sonra genelleyerek fonksiyonu tanımlamayı “çocuk oyuncağı” haline getiriyoruz.</p>
+
+
+  </div>
+
+</article>
+
+    </div>
+    <nav class="navbar fixed-bottom navbar-dark bg-dark text-center">
+<div class="container justify-content-center">
+<a  href="https://www.facebook.com/mehmet.gencer.9484" class="m-1 fa fa-facebook"></a>
+<a  href="https://twitter.com/gekotek" class="m-1 fa fa-twitter"></a>
+<a  href="https://tr.linkedin.com/in/mgencer/en" class="m-1 fa fa-linkedin"></a>
+<a  href="https://instagram.com/mehmetgencer69" class="m-1 fa fa-instagram"></a>
+<a  href="https://plus.google.com/+MehmetGencerTr" class="fm-1 fa fa-google"></a>
+<a   href="https://bilgi.academia.edu/MehmetGen%C3%A7er" class="m-1 fa fa-researchgate" id="academia-button"><img style="width:24px;" src="http://a.academia-assets.com/images/favicons/apple-touch-icon-144x144.png" class="academia-button-logo"></a> 
+<a  href="https://www.researchgate.net/profile/Mehmet_Gencer" class="m-1 fa fa-academia" id="rg-button"><img style="width:24px;" src="https://www.researchgate.net/apple-touch-icon-180x180.png" class="academia-button-logo"></a>          
+<a  href="mailto:mehmetgencer@yahoo.com">mehmetgencer@yahoo.com</a>
+
+<div>
+</nav>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+  </body>
+</html>
