@@ -1,1 +1,1 @@
-# cebirveprog-2024-ders-notlari
+# cebirveproglama-ders-notlari
